@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <!-- Background container for the form and content -->
   <div class="content-background">
     <header>
       <div class="header-content">
@@ -18,13 +17,11 @@
       <div id="clock"></div>
     </header>
 
-    <!-- Right side with instructions on top and form below -->
     <div class="right-side">
-      <!-- Instructions with light blue blurred frame (TOP) -->
       <div class="instructions">
-        <h3>📌 Important Instructions:</h3>
-        <p>1️⃣ Booking must be made at least <b>3 hours before</b> the requested time.</p>
-        <p>2️⃣ To collect the keys, please contact:</p>
+        <h3> Important Instructions:</h3>
+        <p>1. Booking must be made at least <b>3 hours before</b> the requested time.</p>
+        <p>2️. To collect the keys, please contact:</p>
         <table>
           <thead>
             <tr>
@@ -32,32 +29,28 @@
               <th>Name</th>
               <th>Room</th>
               <th>Contact</th>
+             
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>MPKK Fellow</td>
-              <td>Murad Alwalid</td>
-              <td>A.1-7-1</td>
+              <td><strong>MPKK Fellow</strong></td>
+              <td><strong>Murad Alwalidi</strong></td>
+              <td><strong>A-1-7-1</strong></td>
               <td>
                 <a href="https://wa.me/qr/MF27IUWSVELFL1" class="wa-link" target="_blank" rel="noopener">
-                  <svg class="whatsapp-icon" viewBox="0 0 32 32">
-                    <path d="M17.5 12.5c-.3-.8-.7-.8极速快3-1-.9-.3 0-.6 0-.9.1-.3.1-.7.3-1 .6-.3.3-1.1 1.1-1.1 2.6 0 1.5 1.1 3 1.2 3.2.1.2 2.1 3.3 5.1 4.6 2.5 1.1 3 0 3.5-.3.5-.3 1.7-1.1 1.9-2.1.2-1.1.2-2-.1-2.2-.2-.2-.5-.3-1-.极速快36-.5-.2-1.1-.2-1.6-.2-.5 0-1.1.1-1.6.6-.5.5-1.9 1.6-2.3 1.7-.4.1-.7.1-1-.2-.3-.3-.7-.7-1.2-1.2-.4-.4-.9-.9-1.2-1.2-.3-.3 0-.5.2-.7.2-.2.5-.5.7-.7.2-.2.3-.4.5-.6.2-.2.2-.4.2-.6 0-.2 0-.5-.2-.7-.2-.2-1.1-1.1-1.5-1.5z"/>
-                    <path d="M16 30c7.7 0 14-6.3 14-14S23.7 2 16 2 2 8.3 2 16c0 2.5.7 5 2 7.2L2 30l6.8-2c2.2 1.3 4.7 2 7.2 2z"/>
-                  </svg>
+                  <img src="whatsupicon.jpg" alt="WhatsApp" class="whatsapp-icon">
                 </a>
               </td>
             </tr>
             <tr>
-              <td>MPKK</td>
-              <td>Ashraf Obad</td>
-              <td>A-2-6-1</td>
+              <td><strong>MPKK</strong></td>
+              <td><strong>Ashraf Obad</strong></td>
+              <td><strong>A-2-6-1</strong></td>
               <td>
+                 
                 <a href="https://wa.me/qr/F3JO5UZXEQTTL1" class="wa-link" target="_blank" rel="noopener">
-                  <svg class="whatsapp-icon" viewBox="0 0 32 32">
-                    <path d="M17.5 12.5c-.3-.8-.7-.8-1-.9-.3 0-.6 0-.9.1-.3.1-.7.3-1 .6-.3.3-1.1 1.1-1.1 2.6 0 1.5 1.1 3 1.2 3.2.1.2 2.1 3.3 5.1 4.6 2.5 1.1 3 0 3.5-.3.5-.3 1.7-1.1 1.9-2.1.2-1.1.2-2-.1-2.2-.2-.2-.5-.3-1-.6-.5-.2-1.1-.2-1.6-.2-.5 0-1.1.1-1.6.6-.5.5-1.9 1.6-2.3 1.7-.4.1-.7.1-1-.2-.3-.3-.7-.7-1.2-1.2-.4-.4-.9-.9-1.2-1.2-.3-.3 0-.极速快35.2-.7.2-.2.5-.5.7-.7.2-.2.3-.4.5-.6.2-.2.2-.4.2-.6 0-.2 极速快30-.5-.2-.7-.2-.2-1.1-1.1-1.5-1.5z"/>
-                    <path d="M16 30c7.7 0 14-6.3 14-14S23.7 2 16 极速快32 2 8.3 2 16c0 2.5.7 5 2 7.2L2 30l6.8-2c2.2 1.3 4.7 2 7.2 2z"/>
-                  </svg>
+                  <img src="whatsupicon.jpg" alt="WhatsApp" class="whatsapp-icon">
                 </a>
               </td>
             </tr>
@@ -65,7 +58,6 @@
         </table>
       </div>
 
-      <!-- Form (BOTTOM) -->
       <div class="container yellow-frame">
         <h2>Booking Form</h2>
         <form id="bookingForm"
@@ -75,19 +67,19 @@
               onsubmit="return handleSubmit();">
           <label for="name">Name:</label>
           <input class="input" type="text" id="name" name="entry.197220575" required>
-          
+
           <label for="matric">Matric Number:</label>
           <input class="input" type="text" id="matric" name="entry.1009552916" required>
-          
+
           <label for="phone">Phone Number:</label>
           <input class="input" type="tel" id="phone" name="entry.1592941642" required>
-          
+
           <label for="from">Booking From (Day & Time):</label>
           <input class="input" type="datetime-local" id="from" name="entry.441085941" required>
-          
+
           <label for="to">Booking To (Day & Time):</label>
           <input class="input" type="datetime-local" id="to" name="entry.631650623" required>
-          
+
           <button type="submit" class="yellow-button">Submit Booking</button>
         </form>
         <div id="successMessage" class="success-message">
@@ -98,6 +90,49 @@
   </div>
 
   <iframe name="hidden_iframe" style="display:none;"></iframe>
-  <script src="script.js"></script>
+
+  <script>
+    // Live Clock
+    function updateClock() {
+      const el = document.getElementById("clock");
+      if (!el) return;
+      const now = new Date();
+      const opts = {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+        hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true
+      };
+      el.textContent = now.toLocaleString('en-GB', opts);
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Form validation
+    function handleSubmit() {
+      const start = new Date(document.getElementById("from").value);
+      const end = new Date(document.getElementById("to").value);
+      const now = new Date();
+
+      if (end <= start) {
+        alert("'Booking To' must be after 'Booking From'.");
+        return false;
+      }
+
+      const diff = (start - now) / (1000*60*60);
+      if (diff < 3) {
+        alert("⚠️ Book at least 3 hours before the requested time.");
+        return false;
+      }
+
+      setTimeout(() => {
+        document.getElementById("bookingForm").reset();
+        document.getElementById("successMessage").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("successMessage").style.display = "none";
+        }, 5000);
+      }, 800);
+
+      return true;
+    }
+  </script>
 </body>
 </html>
